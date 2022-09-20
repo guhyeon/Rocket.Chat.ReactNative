@@ -240,15 +240,15 @@ android {
 
     signingConfigs {
         release {
-                keyAlias keystoreProperties['keyAlias']
-                keyPassword keystoreProperties['keyPassword']
-                storeFile file(keystoreProperties['storeFile'])
-                storePassword keystoreProperties['storePassword']
+//                 keyAlias keystoreProperties['keyAlias']
+//                 keyPassword keystoreProperties['keyPassword']
+//                 storeFile file(keystoreProperties['storeFile'])
+//                 storePassword keystoreProperties['storePassword']
 //             if (project.hasProperty('KEYSTORE')) {
-//                 storeFile file(KEYSTORE)
-//                 storePassword KEYSTORE_PASSWORD
-//                 keyAlias KEY_ALIAS
-//                 keyPassword KEY_PASSWORD
+                storeFile file(KEYSTORE)
+                storePassword KEYSTORE_PASSWORD
+                keyAlias KEY_ALIAS
+                keyPassword KEY_PASSWORD
 //             }
         }
     }
